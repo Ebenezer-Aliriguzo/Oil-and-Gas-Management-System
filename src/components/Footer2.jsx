@@ -9,13 +9,13 @@ const Footer2 = () => {
   return (
     <footer className="footer2">
       <div className="social-media-icons">
-        <IconButton component="a" href="https://web.facebook.com/ebenezeruzoma" target="_blank" rel="noopener noreferrer" className="social-icon facebook">
+        <IconButton component="a" href="https://web.facebook.com/" target="_blank" rel="noopener noreferrer" className="social-icon facebook">
           <FaFacebookF />
         </IconButton>
         <IconButton component="a" href="https://x.com/?lang=en" target="_blank" rel="noopener noreferrer" className="social-icon x">
           <SiX />
         </IconButton>
-        <IconButton component="a" href="https://wa.me/08033489206" target="_blank" rel="noopener noreferrer" className="social-icon whatsapp">
+        <IconButton component="a" href="https://wa.me/08184927601" target="_blank" rel="noopener noreferrer" className="social-icon whatsapp">
           <FaWhatsapp />
         </IconButton>
         <IconButton component="a" href="https://mail.google.com/" target="_blank" rel="noopener noreferrer" className="social-icon gmail">
