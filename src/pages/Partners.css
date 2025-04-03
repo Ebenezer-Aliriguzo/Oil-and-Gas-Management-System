@@ -1,0 +1,33 @@
+.partners-container {
+    text-align: center;
+    padding: 10px;
+    background-color: grey;
+    height: 150px;
+  }
+  
+  .partners-scroll {
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 10px 0;
+  }
+  
+  .partners-images {
+    display: inline-block;
+    animation: scroll 20s linear infinite;
+  }
+  
+  .partners-images img {
+    display: inline-block;
+    width: 100px; 
+    height: auto;
+    margin: 0 10px;
+  }
+  
+  @keyframes scroll {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }

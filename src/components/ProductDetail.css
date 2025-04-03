@@ -1,0 +1,42 @@
+.product-detail-container {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .product-detail-image {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  
+  .product-detail-name {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .product-detail-description {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  .product-detail-price {
+    font-size: 1.5rem;
+    color: #FF5722;
+    margin-bottom: 20px;
+  }
+  
+  .paystack-button {
+    background-color: #FF5722;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .paystack-button:hover {
+    background-color: #FF8A65;
+  }

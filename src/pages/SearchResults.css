@@ -1,0 +1,26 @@
+.search-results {
+    padding: 20px;
+  }
+  
+  .search-results h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .search-results ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .search-results li {
+    margin-bottom: 20px;
+  }
+  
+  .search-results li h2 {
+    font-size: 1.5rem;
+    margin: 0;
+  }
+  
+  .search-results li p {
+    margin: 10px 0 0;
+  }

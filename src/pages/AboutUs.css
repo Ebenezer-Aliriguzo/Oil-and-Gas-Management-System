@@ -1,0 +1,47 @@
+.about-us-container {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .about-us-title {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .about-us-image {
+    display: block;
+    margin: 0 auto 20px auto;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .about-us-section {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+  }
+  
+  .about-us-section:hover {
+    transform: scale(1.05);
+  }
+  
+  .section-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .section-date {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #FF5722;
+  }
+  
+  .section-description {
+    font-size: 16px;
+    color: #555;
+  }

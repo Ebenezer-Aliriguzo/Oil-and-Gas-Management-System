@@ -1,0 +1,61 @@
+.contact-us-container {
+  background-color: #f4f4f4;
+  padding: 20px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.contact-us-title {
+  margin: 20px 0;
+  text-align: center;
+  font-size: 2rem;
+  color: #333;
+}
+
+.contact-us-form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.contact-us-form label {
+  margin-bottom: 15px;
+  width: 100%;
+  text-align: left;
+}
+
+.contact-us-form input,
+.contact-us-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.send-message-button {
+  background-color: black !important;
+  color: white;
+  width: 150px;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 20px;
+}
+
+.send-message-button:hover {
+  background-color: #FF8A65;
+}

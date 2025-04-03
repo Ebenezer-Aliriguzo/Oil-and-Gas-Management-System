@@ -1,0 +1,133 @@
+/* Base styles for all screen sizes */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  background-color: #FF5722 !important;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: -50; 
+  width: 100%; 
+  overflow: visible;
+  margin-top: 0%;
+}
+
+.navbar-logo {
+  margin-right: 50px; 
+  margin-top: 0; 
+}
+
+.navbar-button {
+  margin-left: 10px;
+  white-space: nowrap; 
+}
+
+.navbar-marquee {
+  font-size: 1rem; 
+  margin-top: 5px; 
+  animation: color-change 10s infinite;
+  width: 100%; 
+}
+
+@keyframes color-change {
+  0% { color: white; }
+  25% { color: blue; }
+  50% { color: green; }
+  75% { color: black; }
+  100% { color: gold; }
+}
+
+.search {
+  position: relative;
+  border-radius: 4px;
+  background-color: white;
+  margin-left: -160px;
+  width: 150px; 
+  margin-top: 0;
+  display: flex; 
+  align-items: center; 
+}
+
+.search-button {
+  margin-left: 8px; 
+  background: linear-gradient(45deg, blue, #FF5722) !important;
+  background-clip: text;
+  color: white !important; 
+  height: 30px; 
+  font-size: 0.8rem; 
+  text-transform: uppercase;
+  box-shadow: 0 0 10px gold;
+}
+
+/* Media queries for Navbar */
+@media (max-width: 1085px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .navbar-logo {
+    margin-right: 0;
+    margin-top: 0;
+  }
+  .navbar-button {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 925px) {
+  .navbar-marquee {
+    font-size: 1rem;
+    margin-top: 5px;
+  }
+}
+
+@media (max-width: 700px) {
+  .navbar {
+    padding: 5px;
+  }
+}
+
+/* Media queries for Hero section */
+@media (max-width: 1085px) {
+  .hero .banner span {
+    right: -480px;
+    top: -315px;
+  }
+}
+
+@media (max-width: 925px) {
+  .hero {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 700px) {
+  .hero {
+    padding-bottom: 40px;
+  }
+}
+
+/* Media queries for Footer */
+@media (max-width: 1085px) {
+  .footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 925px) {
+  .footer {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 700px) {
+  .footer {
+    padding: 5px;
+  }
+}
