@@ -34,7 +34,7 @@ const Footer2 = () => {
             </div>
             <div className="contact-item">
               <FaPhoneAlt />
-              <p>Phone: +2348033489206</p>
+              <p>Phone: +2348184927601</p>
             </div>
             <div className="contact-item">
               <FaMapMarkerAlt />
