@@ -153,7 +153,7 @@ const ImageCarousel = () => {
         </div>
       </Carousel>
       <div className="carousel-center-text">
-        Welcome to Chidex Oil and Gas Plant
+        Welcome to Chidest Oil and Gas Plant
       </div>
     </div>
   );
