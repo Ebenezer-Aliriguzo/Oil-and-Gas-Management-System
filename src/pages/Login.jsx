@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
-import { Container, Typography, TextField, Button } from '@mui/material';
+import { Container, Typography, TextField, Button, IconButton, InputAdornment } from '@mui/material';
+import { Visibility, VisibilityOff } from '@mui/icons-material';
 import './Login.css';
 
 const Login = () => {
@@ -12,10 +13,20 @@ const Login = () => {
 
   const [showForgetPassword, setShowForgetPassword] = useState(false);
   const [forgetPasswordEmail, setForgetPasswordEmail] = useState('');
+  const [showPassword, setShowPassword] = useState(false);
 
   const navigate = useNavigate();
-  const loginUrl = 'https://your-api-url.com/login'; // I will replace with my actual login URL
-  const forgetPasswordUrl = 'https://your-api-url.com/forget-password'; // I will replace with my actual forget password URL
+  const loginUrl = 'https://my-api-url.com/login'; // Replace with your login URL
+  const forgetPasswordUrl = 'https://my-api-url.com/forget-password'; // Replace with your password reset URL
+
+  const scrollToForm = () => {
+    setTimeout(() => {
+      const formElement = document.getElementById('loginForm');
+      if (formElement) {
+        formElement.scrollIntoView({ behavior: 'smooth' });
+      }
+    }, 100); // Delay ensures DOM updates before scrolling
+  };
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -47,6 +58,7 @@ const Login = () => {
       const response = await axios.post(loginUrl, formData);
       if (response.status === 200) {
         alert('Login successful!');
+        // Save token or redirect
       } else {
         alert('Login failed, please try again.');
       }
@@ -58,6 +70,16 @@ const Login = () => {
 
   const handleForgetPasswordClick = () => {
     setShowForgetPassword(true);
+    scrollToForm();
+  };
+
+  const handleBackToLoginClick = () => {
+    setShowForgetPassword(false);
+    scrollToForm();
+  };
+
+  const handleTogglePasswordVisibility = () => {
+    setShowPassword((prev) => !prev);
   };
 
   return (
@@ -79,7 +101,7 @@ const Login = () => {
               Send Reset Link
             </Button>
             <Typography variant="body2" className="backToLoginText">
-              Remember your password? <a href="#" onClick={() => setShowForgetPassword(false)}>Back to Login</a>
+              Remember your password? <a href="#" onClick={handleBackToLoginClick}>Back to Login</a>
             </Typography>
           </form>
         </>
@@ -99,12 +121,21 @@ const Login = () => {
             <TextField
               label="Password"
               name="password"
-              type="password"
+              type={showPassword ? 'text' : 'password'}
               value={formData.password}
               onChange={handleChange}
               fullWidth
               margin="normal"
               required
+              InputProps={{
+                endAdornment: (
+                  <InputAdornment position="end">
+                    <IconButton onClick={handleTogglePasswordVisibility} edge="end">
+                      {showPassword ? <VisibilityOff /> : <Visibility />}
+                    </IconButton>
+                  </InputAdornment>
+                )
+              }}
             />
             <Button type="submit" variant="contained" className="submitButton">
               Login
