@@ -64,22 +64,11 @@ const Footer2 = () => {
 
         <div className="footer2-center">
           <div className="contact-info">
-            <div className="contact-item">
-              <FaEnvelope />
-              <p>Email: chidex@gmail.com</p>
-            </div>
-            <div className="contact-item">
-              <FaPhoneAlt />
-              <p>Phone: +2348033489206</p>
-            </div>
-            <div className="contact-item">
-              <FaMapMarkerAlt />
-              <p>Number 1 Umuguma Road<br /> New Owerri, Owerri West L.G.A., Imo State</p>
-            </div>
-            <div className="contact-item">
-              <FaEnvelope />
-              <p>Business Hours: 7 am-5 pm, Mon-Sat</p>
-            </div>
+            <div className="contact-item"><FaEnvelope /><p>Email: chidex@gmail.com</p></div>
+            <div className="contact-item"><FaPhoneAlt /><p>Phone: (+234) 907 796 4523</p></div>
+            <div className="contact-item"><FaPhoneAlt /><p>Phone: (+234) 818 492 7601</p></div>
+            <div className="contact-item"><FaMapMarkerAlt /><p>Number 1 Umuguma Road<br /> New Owerri, Owerri West L.G.A., Imo State</p></div>
+            <div className="contact-item"><FaEnvelope /><p>Business Hours: 7 am-5 pm, Mon-Sat</p></div>
           </div>
         </div>
 
