@@ -1,7 +1,7 @@
 import React from 'react';
-import './TermsOfServiceAndPrivacyPolic.css';
+import './TermsOfServiceAndPrivacyPolicy.css';
 
-const TermsofServiceandPrivacyPolicy = () => {
+const TermsOfServiceAndPrivacyPolicy = () => {
   return (
     <div className="terms-container">
       <h1 className="terms-title">Terms of Service and Privacy Policy</h1>
