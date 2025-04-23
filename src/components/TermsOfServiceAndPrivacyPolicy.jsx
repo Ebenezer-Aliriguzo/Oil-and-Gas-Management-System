@@ -1,5 +1,5 @@
 import React from 'react';
-import './TermsofServiceandPrivacyPolicy.css';
+import './TermsOfServiceAndPrivacyPolic.css';
 
 const TermsofServiceandPrivacyPolicy = () => {
   return (
