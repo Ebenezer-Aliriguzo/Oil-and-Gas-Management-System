@@ -16,7 +16,7 @@ import SafetyTips from './pages/SafetyTips';
 import ContactUs from './pages/ContactUs';
 import Login from './pages/Login';
 import Signup from './pages/Signup';
-import TermsofServiceandPrivacyPolicy from './components/TermsofServiceandPrivacyPolicy'; // Correct import for the component
+import TermsofServiceandPrivacyPolicy from './components/TermsOfServiceAndPrivacyPolicy'; // Correct import for the component
 import Footer1 from './components/Footer1';
 import Footer2 from './components/Footer2';
 import ImageCarousel from './components/Carousel';
@@ -60,7 +60,7 @@ const App = () => {
         <Route path="/signup" element={<Signup />} />
         <Route
           path="/termsofserviceandprivacypolicy"
-          element={<TermsofServiceandPrivacyPolicy />}
+          element={<TermsOfServiceAndPrivacyPolicy />}
         />
       </Routes>
       <Footer1 />
