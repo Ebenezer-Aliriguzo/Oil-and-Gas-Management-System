@@ -73,4 +73,4 @@ const TermsOfServiceAndPrivacyPolicy = () => {
   );
 };
 
-export default TermsofServiceandPrivacyPolicy;
+export default TermsOfServiceAndPrivacyPolicy;
