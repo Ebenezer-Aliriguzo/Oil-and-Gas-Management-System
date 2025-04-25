@@ -1,15 +1,18 @@
+/* General Styles */
 body {
   background-color: whitesmoke !important;
 }
 
+/* Default styles for large screens */
 .registrationForm {
-  width: 30%;
+  width: 30%; /* For large screens */
   max-height: 50%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
   gap: 10px;
+  margin: 0 auto; /* Center the form */
 }
 
 .signUpText {
@@ -17,17 +20,17 @@ body {
   padding: 10px;
   text-align: center;
   font-size: 24px;
-  width: 40%;
+  width: 40%; /* For large screens */
   margin-bottom: 5px;
-  color: black; 
+  color: black;
 }
 
 .registrationForm form {
-  width: 30%;
+  width: 30%; /* For large screens */
   padding: 10px;
   background-color: white;
   border-radius: 10px;
-  height: auto; 
+  height: auto;
   box-sizing: border-box;
 }
 
@@ -35,7 +38,7 @@ body {
   display: block;
   font-size: 14px;
   margin-bottom: 3px;
-  color: black; 
+  color: black;
 }
 
 .registrationForm input {
@@ -114,9 +117,27 @@ body {
 .loginText {
   margin-top: 10px;
   text-align: center;
-  color: black; 
+  color: black;
 }
 
 .loginText a {
   color: black;
+}
+
+/* Responsive Styles for Small Screens */
+@media (max-width: 768px) {
+  .registrationForm {
+    width: 90%; /* Full width for small screens */
+    max-width: 500px; /* Limit the maximum width */
+    padding: 10px;
+  }
+
+  .signUpText {
+    font-size: 20px; /* Adjust font size for small screens */
+    width: 100%; /* Use full width for better alignment */
+  }
+
+  .registrationForm form {
+    width: 100%; /* Use full width for small screens */
+  }
 }
