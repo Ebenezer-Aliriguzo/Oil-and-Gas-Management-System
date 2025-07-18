@@ -71,11 +71,11 @@ const NavBar = () => {
 
   const menuItems = [
     { label: 'Home', path: '/' },
-    { label: 'LPG Gas Products', path: '/products' },
-    { label: 'About Us', path: '/about-us' },
     { label: 'Order Gas', path: '/order-gas', scrollTo: 'orderGasForm' },
+    { label: 'LPG Gas Products', path: '/products' },
     { label: 'Services', path: '/services' },
     { label: 'Safety Tips', path: '/safety-tips' },
+     { label: 'About Us', path: '/about-us' },
     { label: 'Contact Us', path: '/contact-us', scrollTo: 'contactUsForm' },
     { label: 'FAQs', path: '/faqs' },
     { label: 'Login', path: '/login', scrollTo: 'loginForm' },
