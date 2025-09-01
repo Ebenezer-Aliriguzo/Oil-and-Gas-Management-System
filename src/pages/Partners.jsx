@@ -10,7 +10,7 @@ import partner6 from '../assets/partner6.webp';
 const Partners = () => {
   return (
     <div className="partners-container">
-      <h1>Our Partners</h1>
+      <h1>Our Future Partners</h1>
       <div className="partners-scroll">
         <div className="partners-images">
           <img src={partner1} alt="Partner 1" />
