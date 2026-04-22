@@ -64,7 +64,7 @@ const Footer2 = () => {
 
         <div className="footer2-center">
           <div className="contact-info">
-            <div className="contact-item"><FaEnvelope /><p>Email: chidex@gmail.com</p></div>
+            <div className="contact-item"><FaEnvelope /><p>chidestoilandgas1@gmail.com</p></div>
             <div className="contact-item"><FaPhoneAlt /><p>Phone: (+234) 907 796 4523</p></div>
             <div className="contact-item"><FaPhoneAlt /><p>Phone: (+234) 818 492 7601</p></div>
             <div className="contact-item"><FaMapMarkerAlt /><p>Number 1 Umuguma Road<br /> New Owerri, Owerri West L.G.A., Imo State</p></div>
@@ -89,7 +89,7 @@ const Footer2 = () => {
         </div>
       </div>
 
-      <p className="footer2-copy">&copy; 2025 | Chidest Oil and Gas Plant | All Rights Reserved</p>
+      <p className="footer2-copy">&copy; 2026 | Chidest Oil and Gas Plant | All Rights Reserved</p>
     </footer>
   );
 };
